@@ -4,7 +4,7 @@
 
 .PHONY: build
 build:
-	cmake -B build
+	cmake -B build -DGGML_CUDA=$(GGML_CUDA)
 	cmake --build build --config Release
 
 # download a few audio samples into folder "./samples":
